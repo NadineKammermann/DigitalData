@@ -1,0 +1,18 @@
+#Problem 1
+
+books
+* id integer auto_increment
+- name varchar(50)
+- author varchar(50)
+- signature varchar(10)
+
+people
+* id integer auto_increment
+- name varchar(50)
+- library pin/number varchar(10)
+
+lent_books
+* id integer auto_increment
+- lent_to => people.id
+- book => books.id
+- return date date
