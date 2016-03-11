@@ -1,0 +1,22 @@
+
+#Problem 2
+
+pieces_of_music
+* id integer auto_increment
+- title varchar(100)
+- date date
+- place varchar(50)
+
+reviews
+* id integer auto_increment
+- piece_of_music => pieces_of_music.id
+- title varchar(100)
+- author => people.id
+
+people
+* id integer auto_increment
+- name varchar(50)
+
+performers
+- title => pieces_of_music.id
+- name => people.id
