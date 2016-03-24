@@ -2,13 +2,13 @@
 #Problem 4
 
 submitted_articles
-* id integer auto_increment
+* id integer 
 - title varchar(200)
 - publication boolean
 - issue? date
 
 people
-* id integer auto_increment
+* id integer 
 - name varchar(100)
 - e-mail? varchar(100)
 

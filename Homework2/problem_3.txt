@@ -2,20 +2,20 @@
 #Problem 3
 
 pieces_of_music
-* id integer auto_increment
+* id integer 
 - title varchar(100)
 - date date
 - place varchar(50)
 
+people
+* id integer
+- name varchar(50)
+
 reviews
-* id integer auto_increment
+* id integer
 - piece_of_music => pieces_of_music.id
 - title varchar(100)
 - author => people.id
-
-people
-* id integer auto_increment
-- name varchar(50)
 
 performers
 - title => pieces_of_music.id
