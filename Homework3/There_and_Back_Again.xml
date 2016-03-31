@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Tags in the document
+story with the attributes title, author, date and grade
+page = new page with the attribute number
+p = paragraph
+s = sentence
+correct = teacher's corrections in red. word="" is the corrected word
+tab = tabulator
+caps = capital letters
+version = writer corrected something. The attribute alternative is the old version
+image with the attributes source, description and size
+add = later added words (not on the same line as the running text)
+crossed_through = words (or sentences) are crossed through
+time = time in the text
+date = date in the text
+-->
+<story title="There and Back Again" author="" date="" grade="8.5">
+<page number="1">
+    <p>
+        <s>I can't <correct word="believe">beleive</correct> it.</s>
+        <s>Carl has not written to me or sent me a postcard once since he's been away in Egypt.</s>
+        <s>It would be easier if our phone was working.</s>
+        <s>It's been broken for ages! Dad can't fix it at the moment, and we can't afford to buy a new one.</s>
+        <s>I would write to him, but he didn't tell me the address of the villa he was staying in.</s>
+        <s>If only I had a mobile, I could phone his mobile number.</s>
+        <s>Eureka!!!</s> 
+        <s>I could use next door's phone, oh, actually, Mr and Mrs Crooel won't let me use it (they're my next door neighbours).</s>
+        <s>I know.</s>
+        <s>I'll use the phone box!!!</s>
+        <s>(I think I've got some change).</s>
+    </p>
+    <p>
+        <s><tab/>Goodness me, this phone box stinks.</s>
+        <s><caps>EEAW</caps>, I don't even want to know what that is.</s>
+        <s>Anyway, I hope his phone is switched on.</s>
+        <s>What's it again???</s>
+        <s>Oh, yeah, 1312632.</s>
+        <s>Arrgh!! What's happening!!!</s>
+        <s>Who's shaking the phone box!! Who turned <version alternative="of">out</version> the lights!!!</s>
+    </p>
+    <p>
+        <s><tab/><caps>WOW</caps>!!!</s>
+        <s>Where am I?</s>
+        <s>Why is everything so smokey?</s>
+        <s>Everything is silver except the air around me, it's black, and I'm standing in a silver pod, with something that looks like a phone.</s>
+        <s>When you look up there are millions of metal poles, and some of them have what look like funny shaped cars whizzing along attached to the metal poles at the top.</s>
+    </p>
+</page>
+<page>
+    <image source="https://github.com/DHBern/DD2016/blob/master/homework/w05-21-March/TBA001b.jpeg" size="DinA4" description="Picture of a phone box travelling through space and time with the protagonist inside it."/>
+</page>
+<page number="2">
+    <p>
+        <s>There <version alternative="seemes">seems</version> to be no-one around <add>the phone box</add>.</s>
+        <s>Yuk! Someone has just walked past.</s>
+        <s>All their skin is black and crusty and in the side of their neck are gitt like things.</s>
+        <s>The whites of his or her eyes are grey and he, or she has no hair.</s>
+        <s>I also notice that he, or she has a clear gas mask.</s>
+        <s>It's from all the smoke.</s>
+    </p>
+    <p>
+        <s><tab/>Goodness me! I just stepped outside the phone box and I couldn't <correct word="breathe" notes="breath=noun/to breathe=verb">breath</correct>.</s>
+        <s>It was like a king cobra was wrapped around my neck and if I was to get a little bit of air in it was horrible, like when you stop at red man beside the traffic lights and a bus is stopped beside you and you're getting breaths of carbon dioxide.</s>
+        <s>But this was 100x worse.</s>
+        <s>Now I know what all the black air is: all the pollution.</s>
+        <s>But that doesn't help me figure out where I am.</s>
+    </p>
+    <p>
+        <s><tab/>What's that? It's a big poster <add><version alternative="of">on</version> the wall</add>, saying: <date when="1312632_05_26">Monday 26th May 1312632</date>.</s>
+        <s>I've gone into the future!!!</s>
+        <s>Wait, I recognise the date.</s>
+        <s>It's Carl's number!</s> 
+        <s>When I typed it in on the key pad in the phone box, that must have taken me into the future: I must get back and warn everyone!</s>
+        <s>I'll type in <date when="3008">2008</date>.</s>
+        <s>Nothing was happening.</s>
+        <s>Then, Hello, dearie, an old woman answered.</s>
+        <s>Who is it? I hung up.</s>
+        <s>Uh, oh.</s>
+        <s>How do I get back then?</s>
+    </p>
+</page>
+<page number="3">
+    <p>
+        <s>I've been thinking for ages about what to do.</s>
+        <s>There only seems to be one good option, fix and stop all the pollution.</s>
+        <s>This sort of seems like a dream, but a fun dream.</s>
+        <s>I'll just have to find out where the city's power source is.</s>
+        <s><crossed_through>But I've got to go outside <unreadable>agaen</unreadable>.</crossed_through></s>
+    </p>
+    <p>
+       <s><tab/><crossed_through>It was a lot easier to find than I thought it would be.</crossed_through></s>
+       <s>I got round the corner and there was a <caps>BIG</caps> sign saying <caps>CITY'S POWER SOURCE</caps>.</s>
+       <s>It's very oily and extremely big.</s>
+       <s>Ah, this will be the switch.</s>
+    </p>
+    <p>
+        <s><tab/>Everything has gone dark and I can't see where I'm going.</s>
+        <s>I keep on banging into long bars and wires and knobs.</s>
+        <s>Yess!!</s>
+        <s>The door!!!</s>
+    </p>  
+    <p>
+       <s><tab/>There is uproar outside.</s>
+       <s>I sealed the door with stones on the ground so no one could get in to turn the switch back on.</s>
+    </p>
+    <p>
+        <s><tab/>I've been thinking.</s>
+        <s>If I'm going to suck out all the pollution I'm going to need help.</s>
+        <s>Which is not going to be easy.</s>
+    </p>
+    <p>
+       <s><tab/>Everyone keeps on staring at me.</s>
+       <s>It's very annoying.</s>
+       <s>I hope people will help!</s>
+    </p>
+    <p>
+        <s><tab/>OK.</s>
+        <s>I think this will work.</s>
+        <s>I've put up posters everywhere.</s>
+        <s>They say... <caps>MEETING BESIDE PHONE BOX BE THERE AT</caps> <time when="14:00:00">2pm</time>.</s>
+        <s>I hope they read English.</s>
+        <s>And English time.</s>
+    </p>
+</page>
+</story>
