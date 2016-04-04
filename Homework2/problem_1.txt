@@ -1,0 +1,18 @@
+#Problem 1
+
+books
+* id integer 
+- name varchar(50)
+- author varchar(50)
+- signature varchar(10)
+
+people
+* id integer
+- name varchar(50)
+- librarypin varchar(10)
+
+lent_books
+* id integer 
+- lent_to => people.id
+- book => books.id
+- return_date date

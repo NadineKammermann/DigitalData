@@ -1,0 +1,21 @@
+
+#Problem 4
+
+submitted_articles
+* id integer 
+- title varchar(200)
+- publication boolean
+- issue? date
+
+people
+* id integer 
+- name varchar(100)
+- e-mail? varchar(100)
+
+authors
+- article => submitted_articles.id
+- person => people.id
+
+reviews
+- author => people.id
+- article => submitted_articles.id
