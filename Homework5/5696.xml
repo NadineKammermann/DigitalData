@@ -1,4 +1,4 @@
-<TEI xmlns="http://www.tei-c.org/ns/1y.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -136,7 +136,7 @@
             <milestone unit="compo" n="B"/>
             <lb n="1"/>
             <div>
-                <head rend="italic">Actus Primus. Scoena Prima.</head>
+                <head rend="italic" name="act">Actus Primus. Scoena Prima.</head>
                 <lb n="2"/>
             </div>
             <div>
@@ -831,7 +831,7 @@
                 </sp>
             </div>
             <div>
-                <head rend="italic">Actus Secundus. Scoena Prima.</head>
+                <head rend="italic" name="act">Actus Secundus. Scoena Prima.</head>
                 <lb n="615"/>
                 <stage rend="italic">Enter Hostesse, with two Officers, Fang, and Snare.</stage>
                 <sp>
@@ -2420,7 +2420,7 @@
                 </sp>
             </div>
             <div>
-                <head rend="italic">Actus Tertius. Scena Prima.</head>
+                <head rend="italic" name="act">Actus Tertius. Scena Prima.</head>
                 <lb n="1421"/>
                 <stage rend="italic">Enter the King, with a Page.</stage>
                 <sp>
@@ -3200,7 +3200,7 @@
                 </sp>
             </div>
             <div>
-                <head rend="italic">Actus Quartus. Scena Prima.</head>
+                <head rend="italic" name="act">Actus Quartus. Scena Prima.</head>
                 <lb n="1861"/>
                 <stage rend="italic">Enter the Arch-bishop, Mowbray, Hastings,<lb n="1862"/>Westmerland, Coleuile.</stage>
                 <sp>
@@ -4170,7 +4170,7 @@
                 </sp>
             </div>
             <div>
-                <head rend="italic">Actus Quintus. Scoena Prima.</head>
+                <head rend="italic" name="act">Actus Quintus. Scoena Prima.</head>
                 <lb n="2786"/>
                 <stage rend="italic">Enter Shallow, Silence, Falstaffe, Bardolfe,<lb n="2787"/>Page, and Dauie.</stage>
                 <sp>

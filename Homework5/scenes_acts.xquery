@@ -16,13 +16,12 @@ contains the element that you want to add the attribute to.:)
    
 declare namespace tei = 'http://www.tei-c.org/ns/1.0';
 
-   for $head in doc('5696.xml')//tei:text/tei:head/text()
-   
-   where starts-with($head, "Actus")
-   return
-        update insert attribute name {'act'} into $head
+   for $head in doc('5696.xml')//tei:text//tei:head
+        where starts-with($head, 'Scena')
+        return
+        update insert attribute name {'scene'} into $head
+ 
 
-        
 (: You won't see much of anything in your results box, but if you close
    and re-open your file, you'll see that all the Bedford parts are now
    listed as 'Bedford'! :)
