@@ -1,0 +1,129 @@
+1. When was 'Jerry Maguire' released?
+
+MATCH (m:Movie {title: "Jerry Maguire"}) RETURN m.released
+
+--> 2000
+
+2. When was Kevin Bacon born?
+
+MATCH (p:Person {name: "Kevin Bacon"}) RETURN p.born
+
+--> 1958
+
+3. What is the tagline of 'The Matrix Reloaded'?
+
+MATCH (m:Movie {title: "The Matrix Reloaded"}) RETURN m.tagline
+
+--> Free your mind
+
+4. Which movies have reviews?
+
+MATCH (m:Movie)<-[:REVIEWED]-(p:Person) RETURN m or RETURN m.title
+
+--> Jerry Maguire, The Replacements, The Birdcage, Unforgiven, Cloud Atlas, The Da Vinci Code
+
+5. What roles were acted in 'Unforgiven'?
+
+MATCH (a)-[r:ACTED_IN]-(m) WHERE m.title = 'Unforgiven' UNWIND r.roles AS parts RETURN  a.name, parts
+
+--> Gene Hackman: Little Bill Daggett, Richard Harris: English Bob, Clint Eastwood: Bill Munny
+
+6. What roles were acted in 'Cloud Atlas'?
+
+MATCH (a)-[r:ACTED_IN]-(m) WHERE m.title = 'Cloud Atlas' UNWIND r.roles AS parts RETURN  parts
+
+--> Zachry, Dr. Henry Goose, Isaac Sachs, Dermot Hoggins, Bill Smoke, Haskell Moore, Tadeusz Kesselring, Nurse Noakes, Boardman Mephi
+Old Georgie, Luisa Rey, Jocasta Ayrs, Ovid, Meronym, Vyvyan Ayrs, Captain Molyneux, Timothy Cavendish
+
+7. How many different people acted in 'Cloud Atlas'?
+
+MATCH (a)-[r:ACTED_IN]-(m) WHERE m.title = 'Cloud Atlas' RETURN  a.name
+
+--> Tom Hanks, Hugo Weaving, Halle Berry, Jim Broadbent
+
+8. Who acted in movies released in 1995?
+
+MATCH (p:Person)-[:ACTED_IN]->(m:Movie) WHERE m.released=1995 RETURN p.name
+
+--> Dina Meyer, Ice-T, Keanu Reeves, Takeshi Kitano, Tom Hanks, Kevin Bacon, Ed Harris, Bill Paxton, Gary Sinise
+
+9. Who reviewed 'Jerry Maguire'?
+
+MATCH (p:Person)-[:REVIEWED]->(m:Movie {title: "Jerry Maguire"}) RETURN p.name
+
+--> Jessica Thompson
+
+10. Who has both produced and directed a movie?
+
+The same movie produced and directed:
+
+MATCH (p:Person)-[:PRODUCED]->(m:Movie) MATCH (p:Person)-[:DIRECTED]->(m:Movie) RETURN p.name
+
+--> Cameron Crowe, Rob Reiner, Nancy Meyers
+
+Different movies produced and directed:
+
+MATCH (p:Person)-[:PRODUCED]->(m:Movie) MATCH (p:Person)-[:DIRECTED]->(q:Movie) RETURN p.name
+
+--> Cameron Crowe, Nora Ephron, Rob Reiner, Andy Wachowski, Nancy Meyers
+
+11. What are the birth years of actors in movies released between 1995 and 2005?
+
+MATCH (p:Person)-[:ACTED_IN]->(m:Movie) WHERE 1995 < m.released < 2005 RETURN DISTINCT p.born
+
+--> 1978
+1960
+1961
+1967
+1964
+1975
+1940
+1968
+1962
+1970
+1974
+1969
+1996
+1971
+1963
+1937
+1942
+1929
+1951
+1956
+1973
+1949
+1948
+1977
+1930
+1953
+1957
+1959
+1955
+1954
+1946
+
+12. Who has acted in a movie with Keanu Reeves?
+
+MATCH (p:Person {name: "Keanu Reeves"})-->(m:Movie)<-[:ACTED_IN]-(q:Person) RETURN q
+
+--> Jack Nicholson
+Diane Keaton
+Orlando Jones
+Gene Hackman
+Brooke Langton
+Dina Meyer
+Ice-T
+Takeshi Kitano
+Laurence Fishburne
+Carrie-Anne Moss
+Hugo Weaving
+Carrie-Anne Moss
+Hugo Weaving
+Laurence Fishburne
+Charlize Theron
+Al Pacino
+Emil Eifrem
+Hugo Weaving
+Laurence Fishburne
+Carrie-Anne Moss
